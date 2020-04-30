@@ -1,0 +1,17 @@
+{
+    "presets": ["@babel/react", "@babel/env"],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./src"],
+                "alias": {
+                    "ducks": "./src/ducks",
+                    "components": "./src/components",
+                    "utils": "./src/utils",
+                    "assets": "./src/assets"
+                }
+            }
+        ]
+    ]
+}

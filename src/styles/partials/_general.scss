@@ -1,0 +1,114 @@
+body {
+    font-family: $sans;
+    margin: 0;
+}
+
+.floors {
+    border: 7px solid lightgrey;
+}
+
+.floor {
+    background: #dee;
+    display: flex;
+    .buttons {
+        align-self: center;
+    }
+    button {
+        display: block;
+        width: 100%;
+        padding: 3.5px 8px;
+    }
+}
+
+#doors {
+    border: 1px solid rgba($color: #aaa, $alpha: 0.6);
+    height: 44px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    > div {
+        background: #b9b8b8;
+        height: 100%;
+        width: 50%;
+        border: 1px solid beige;
+        transition: width 1s;
+    }
+}
+
+.floor-indicator {
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid rgba($color: #aaa, $alpha: 0.6);
+    background: white;
+}
+
+.current-floor {
+    color: dodgerblue;
+}
+.target-floor {
+    color: lighten(green, 20%);
+}
+
+.wrapper {
+    display: flex;
+    margin: 5%;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logger {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    min-height: 70px;
+    width: 105px;
+}
+
+.btn {
+    cursor: pointer;
+    border-width: 2px;
+    border-color: rgba($color: #aaa, $alpha: 0.6);
+    outline: none;
+}
+
+.elevator {
+    display: flex;
+    div {
+        align-self: center;
+        font-size: 11px;
+        font-weight: 600;
+    }
+}
+
+.panel {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 236px;
+    max-width: 100px;
+    button {
+        padding: 10px 15px;
+        width: 44px;
+        border-radius: 20px;
+        margin: 3px;
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+        color: grey;
+        text-align: center;
+        width: 100%;
+    }
+}

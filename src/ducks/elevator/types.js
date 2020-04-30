@@ -1,0 +1,10 @@
+export const CALL_FLOOR = 'CALL_FLOOR'; // expects action.toFloor
+export const CALL_ELEVATOR = 'CALL_ELEVATOR'; // expects action.toFloor
+export const START_MOVING = 'START_MOVING'; // expects no other action properties
+export const END_MOVING = 'END_MOVING'; // expects no other action properties
+export const SET_CURRENT_FLOOR = 'SET_CURRENT_FLOOR'; // expects action.toFloor
+export const HIT_TARGET_FLOOR = 'HIT_TARGET_FLOOR'; // expects no other action properties
+export const TARGET_FLOOR_STANDBY = 'TARGET_FLOOR_STANDBY'; // expects no other action properties
+export const RESET_NEXT_TARGET = 'RESET_NEXT_TARGET'; // expects no other action properties
+export const DECIDE_NEXT_TARGET = 'DECIDE_NEXT_TARGET'; // expects no other action properties
+export const LOG_MESSAGE = 'LOG_MESSAGE';
